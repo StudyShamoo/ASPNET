@@ -1,0 +1,22 @@
+＊＊＊　Hello.aspx　＊＊＊
+初めて作ったASPのプログラム。以下は重要なポイント。
+
+・if(!Page.IsPostBack)について
+Page.IsPostBackはポストバックが発生したらtrueとなる。
+ASP.NETではイベント発生時にサーバ側にデータが送信され、
+サーバ側で処理を行ってからクライアントに結果をリターンする。（ポストバック）
+
+・ビューステート
+実行したブラウザでページのソースを表示すると
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="OdVYrG+POnTvJ6YfTTVTubCQhdghjSGYovYNklGMvHPZ620JhrltuEIvOGjQt3Rp0Nk+X1q3WgPZP/cqX801wWWSXz89Tc6vrg8pNaIQeMuD+C2vOGis1q26UmgdBRIbA8Rg6nRi1HbK0ha+RmbaMuoPyjkD+kHrzqVsEJKo/atOrGGns4jCuR/gfUckj+Yv" />
+みたいなタグが見つかる。これがビューステート。
+value属性の文字列はBase64（データを64種類の文字で表現するエンコード方式）でエンコードされたもの。
+ビューステートを利用したものの一例として
+protected void Page_Load(object sender, EventArgs e)
+{
+	if (!Page.IsPostBack)
+	{
+		// データベース、外部サービスへのアクセスなど
+	}
+}
+みたいなのはよく使われる。（ビューステートによってポストバック時の処理を省くイメージ）
