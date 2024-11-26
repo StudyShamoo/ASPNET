@@ -16,7 +16,8 @@ namespace SelfAspNet
 
         protected void btnSend_Click(object sender, EventArgs e)
         {
-            lblGreet.Text = $"こんにちは、{txtName.Text}さん！";
+            // lblGreet.Text = $"こんにちは、{txtName.Text}さん！";
+            lblGreet.Text = $"Good Night " + $"{txtName.Text}.";
         }
     }
 }
