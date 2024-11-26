@@ -11,13 +11,17 @@ namespace SelfAspNet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                txtName.Text = "名無しの権兵衛";
+                lblGreet.Text = $"こんにちは、{txtName.Text}さん！";
+            }
         }
 
         protected void btnSend_Click(object sender, EventArgs e)
         {
-            // lblGreet.Text = $"こんにちは、{txtName.Text}さん！";
-            lblGreet.Text = $"Good Night " + $"{txtName.Text}.";
+            lblGreet.Text = $"こんにちは、{txtName.Text}さん！";
+            // lblGreet.Text = $"Good Night " + $"{txtName.Text}.";
         }
     }
 }
