@@ -73,8 +73,15 @@
     <Content Include="Chap02\FileUpload.aspx" />
     <Content Include="Chap02\FileUploadMulti.aspx" />
     <Content Include="Chap02\RadioButton.aspx" />
+    <Content Include="Chap02\Site.css" />
     <Content Include="Chap02\Text.aspx" />
+    <Content Include="Chap02\Valid.aspx" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="Web.config" />
     <Content Include="Chap01\Hello.aspx" />
   </ItemGroup>
@@ -128,6 +135,13 @@
     <Compile Include="Chap02\Text.aspx.designer.cs">
       <DependentUpon>Text.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Chap02\Valid.aspx.cs">
+      <DependentUpon>Valid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap02\Valid.aspx.designer.cs">
+      <DependentUpon>Valid.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -142,6 +156,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
