@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Chap02\Button.aspx" />
     <Content Include="Chap02\CheckBox.aspx" />
     <Content Include="Chap02\FileUpload2.aspx" />
     <Content Include="Chap02\FileUpload.aspx" />
@@ -78,6 +79,13 @@
     <Content Include="Chap01\Hello.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chap02\Button.aspx.cs">
+      <DependentUpon>Button.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap02\Button.aspx.designer.cs">
+      <DependentUpon>Button.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Chap02\CheckBox.aspx.cs">
       <DependentUpon>CheckBox.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
