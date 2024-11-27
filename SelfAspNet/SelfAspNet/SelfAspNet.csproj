@@ -72,6 +72,7 @@
     <Content Include="Chap02\FileUpload.aspx" />
     <Content Include="Chap02\FileUploadMulti.aspx" />
     <Content Include="Chap02\RadioButton.aspx" />
+    <Content Include="Chap02\Text.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Chap01\Hello.aspx" />
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="Chap02\RadioButton.aspx.designer.cs">
       <DependentUpon>RadioButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chap02\Text.aspx.cs">
+      <DependentUpon>Text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap02\Text.aspx.designer.cs">
+      <DependentUpon>Text.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
