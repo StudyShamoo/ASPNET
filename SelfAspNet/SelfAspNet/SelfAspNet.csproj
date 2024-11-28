@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SelfAsp.mdf" />
+    <Content Include="App_Data\SelfAsp_log.ldf">
+      <DependentUpon>SelfAsp.mdf</DependentUpon>
+    </Content>
     <Content Include="Chap02\Button.aspx" />
     <Content Include="Chap02\CheckBox.aspx" />
     <Content Include="Chap02\FileUpload2.aspx" />
@@ -76,6 +80,7 @@
     <Content Include="Chap02\Site.css" />
     <Content Include="Chap02\Text.aspx" />
     <Content Include="Chap02\Valid.aspx" />
+    <Content Include="Chap03\GridView.aspx" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
@@ -142,6 +147,13 @@
     <Compile Include="Chap02\Valid.aspx.designer.cs">
       <DependentUpon>Valid.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Chap03\GridView.aspx.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chap03\GridView.aspx.designer.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -166,7 +178,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
